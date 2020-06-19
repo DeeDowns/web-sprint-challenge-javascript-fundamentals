@@ -35,7 +35,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
     Higher order functions recieve other functions as parameters. 
 
 3. What is closure?
-    Closure gives you the ability to access functions from a parent level scope in a child level scope.
+    Closure gives the child/inner function to access variables from a higher level scope.
 
 4. Describe the four rules of the 'this' keyword.
     1.Window/Global Object Binding: when in the global scope 'this' refers to the window.
