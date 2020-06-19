@@ -24,18 +24,19 @@ myFunction();
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
-function summation() {
-  let count = 0;
-  return function (num) {
-    count = count + num;
-    return count
+function summation(num) {
+  let count = []
+  for(let i = 0; i <= num; i++){
+    count.push(i)
   }
+  const newCount = count.reduce(function(acc, item){
+    return acc + item
+    }, 0);
   
+    return newCount
 }
-const currentScore = summation()
-console.log(currentScore(2))
-// console.log(currentScore(2))
-// console.log(currentScore(6))
+console.log(summation(4));
+console.log(summation(6));
 
 
 
